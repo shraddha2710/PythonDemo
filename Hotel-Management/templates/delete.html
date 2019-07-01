@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor="#79A599">
+    <center>
+    <h2>You Want to Delete Customer data</h2>
+
+    <form  action="{{ request.path }}" method="post">
+
+      <tr>
+        <td><label for="id">Enter Id :-</label></td>
+        <td><input type="text" name="id" id="id"></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Submit"></td>
+      </tr>
+
+    </form>
+    <h3>
+       <a href="{{url_for('home')}}">Go to HomePage</a>
+    </h3>
+
+    <center>
+  </body>
+</html>

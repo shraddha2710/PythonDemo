@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  </head>
+  <body bgcolor="#79A599">
+    <table align = 'center' cellpadding = "10" bgcolor="#D6E4E0">
+        <form  action="{{ request.path }}" method="post">
+
+      <caption><h2>Customer Registration form</h2></caption>
+
+    <tr>
+      <td><label for="fname">First Name</label></td>
+      <td><input type="text" name="fname"></td>
+    </tr>
+
+    <tr>
+      <td><label for="lname">Last Name</label></td>
+      <td><input type="text" name="lname"></td>
+    </tr>
+
+    <tr>
+      <td><label for="add">Address</label></td>
+      <td><input type="text" name="add"></td>
+    </tr>
+
+    <tr>
+      <td><label for="email">Email</label></td><br>
+      <td><input type="text" name="email"></td>
+    </tr>
+
+    <tr>
+      <td><label for="dob">DOB</label></td>
+      <td><input type="text" name="dob"></td>
+    </tr>
+
+
+    <tr>
+      <td><label for="room_no">Room No</label></td>
+      <td><input type="text" name="room_no"></td>
+    </tr>
+
+    <tr>
+      <td><label for="room_type">Room Type</label></td>
+      <td><input type="text" name="room_type"></td>
+    </tr>
+
+    <tr>
+      <td><label for="check_in_date">Check In Date</label></td>
+      <td><input type="text" name="check_in_date"></td>
+    </tr>
+
+
+    <tr>
+      <td><label for="check_out_date">Check Out Date</label></td>
+      <td><input type="text" name="check_out_date"></td>
+    </tr>
+
+
+    <center> <td><input type="submit" value="Submit"></td></center>
+
+<center>
+  </form>
+    <h3>
+       <a href="{{url_for('home')}}">Go to HomePage</a>
+    </h3>
+</center>
+
+  </table>
+
+
+
+
+  </body>
+</html>

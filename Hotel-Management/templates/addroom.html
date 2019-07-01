@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  </head>
+  <body bgcolor="#79A599">
+    <center>
+
+    <table  cellpadding = "10" bgcolor="#D6E4E0">
+        <form  action="{{ request.path }}" method="post">
+        <caption><h2>Add Room Here</h2></caption>
+
+
+    <tr>
+      <td><label for="roomno">Room no</label></td>
+      <td><input type="text" name="roomno"></td>
+    </tr>
+
+    <tr>
+      <td><label for="roomtype">Room Type</label></td>
+      <td><input type="text" name="roomtype"></td>
+    </tr>
+
+    <tr>
+      <td><label for="cust_id">Customer Id</label></td>
+      <td><input type="text" name="cust_id"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Submit"></td>
+    </tr>
+
+  </form>
+
+    <h3>
+       <a href="{{url_for('home')}}">Go to HomePage</a>
+    </h3>
+
+  </center>
+  </table>
+</body>
+</html>

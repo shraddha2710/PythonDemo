@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor="#79A599">
+<center>
+    <h3>
+     <a href="{{url_for('home')}}">Go to HomePage</a>
+    </h3>
+
+    <h3>Customer List</h3>
+    <table border="1"  bgcolor="#D6E4E0">
+      <thead>
+        <tr>
+          <th>Customer Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>DOB</th>
+          <th>Room No</th>
+          <th>Room Type</th>
+          <th>Check_in_date</th>
+          <th>Check_out_date</th>
+        </tr>
+      </thead>
+
+        <tbody>
+          {% for cust in Customer %}
+          <tr>
+            <td> {{ cust.id }}</td>
+            <td> {{ cust.fname }}</td>
+            <td> {{ cust.lname }}</td>
+            <td> {{ cust.add }}</td>
+            <td> {{ cust.email }}</td>
+            <td> {{ cust.dob }}</td>
+            <td> {{ cust.room_no }}</td>
+            <td> {{ cust.room_type }}</td>
+            <td> {{ cust.check_in_date }}</td>
+            <td> {{ cust.check_out_date }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+
+</center>
+  </body>
+</html>
